@@ -4,23 +4,12 @@
   <meta charset="utf-8">
   <meta name="description"
         content="When Scaffolding Breaks: Investigating Student Interaction with LLM-Based Writing Support in Real-Time K-12 EFL Classrooms">
-  <meta name="keywords" content="EFL, K-12 Classrooms, LLM">
+  <meta name="keywords" content="LLM, K-12, EFL, Writing, Scaffolding, Education, AI, CHI 2026">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>When Scaffolding Breaks</title>
+  <title>When Scaffolding Breaks | CHI 2026</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  <!-- TODO: Replace with your own Google Analytics ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script> -->
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,13 +21,81 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/logo.png">
+  <link rel="icon" href="./static/images/school.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .finding-card {
+      border-left: 4px solid #555;
+      padding: 1.25rem 1.5rem;
+      background: #f8f9fa;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 1.25rem;
+    }
+    .finding-card.positive {
+      border-left-color: #3273dc;
+      background: #f0f5ff;
+    }
+    .finding-card.negative {
+      border-left-color: #cc3333;
+      background: #fff5f5;
+    }
+    .stat-box {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+    .stat-box .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #363636;
+      display: block;
+    }
+    .stat-box .stat-label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .tab-card {
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      padding: 1.25rem;
+      height: 100%;
+    }
+    .tab-card .tab-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .section-divider {
+      border-top: 2px solid #f0f0f0;
+      margin: 3rem 0;
+    }
+    .author-link {
+      font-size: 1rem;
+      color: #363636;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .author-link:hover {
+      color: #3273dc;
+    }
+    .rq-tag {
+      display: inline-block;
+      background: #363636;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 
@@ -50,12 +107,12 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-  <div class="navbar-menu">
+  <!-- <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <a class="navbar-item" href="https://junhomyung.github.io/">
-      <span class="icon">
+        <span class="icon">
           <i class="fas fa-home"></i>
-      </span>
+        </span>
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
@@ -63,114 +120,85 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
+          <a class="navbar-item" href="https://junhomyung.github.io/BLEnD/">
+            BLEnD
           </a>
         </div>
       </div>
     </div>
-
-  </div>
+  </div> -->
 </nav>
 
 
+<!-- Hero -->
 <section class="hero">
   <div class="hero-body">
     <div class="container" style="max-width: 1150px;">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h2 class="title is-2 publication-title">When Scaffolding Breaks: Investigating Student Interaction with LLM-Based Writing Support in Real-Time K-12 EFL Classrooms</h2>
-          <h3 class="title is-4 has-text-danger" style="margin-bottom: 20px;">
-            <span class="icon is-small"><i class="fas fa-trophy"></i></span> 
-            CHI 2026 Best Paper Award
-          </h3>
+          <p class="is-size-6 has-text-grey" style="letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.25rem; margin-top: -2rem;">CHI 2026 &nbsp;·&nbsp; Barcelona, Spain</p>
+          <h1 class="title publication-title" style="font-size: 3rem; margin-bottom: 0.4rem; color: #111;">When Scaffolding Breaks</h1>
+          <h2 class="title is-4 publication-title" style="font-weight: 400; margin-top: 1rem; margin-bottom: 1.5rem;">Investigating Student Interaction with LLM-Based Writing Support in Real-Time K-12 EFL Classrooms</h2>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://junhomyung.github.io/">Junho Myung</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://hyunseunglim.com/">Hyunseung Lim</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://hanaisreal.github.io/">Hana Oh</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://jhw123.github.io/">Hyoungwook Jin</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              Nayeon Kang<sup>4</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sites.google.com/view/soyeonahn/about?pli=1">So-Yeon Ahn</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://galaxytourist.notion.site/galaxytourist/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423">Hwajung Hong</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://aliceoh9.github.io/">Alice Oh</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://juhokim.com/">Juho Kim</a><sup>1</sup>
-            </span>
+          <!-- Authors -->
+          <div style="margin-bottom: 1rem; line-height: 2;">
+            <a href="https://junhomyung.github.io/" class="author-link">Junho Myung</a><sup>1</sup>&ensp;
+            <a href="https://hyunseunglim.com/" class="author-link">Hyunseung Lim</a><sup>1*</sup>&ensp;
+            <a href="https://hanaisreal.github.io/" class="author-link">Hana Oh</a><sup>2*</sup>&ensp;
+            <a href="https://jhw123.github.io/" class="author-link">Hyoungwook Jin</a><sup>3</sup>&ensp;
+            <span class="is-size-6">Nayeon Kang</span><sup>4</sup>&ensp;
+            <a href="https://sites.google.com/view/soyeonahn/about?pli=1" class="author-link">So-Yeon Ahn</a><sup>1</sup>&ensp;
+            <a href="https://galaxytourist.notion.site/galaxytourist/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423" class="author-link">Hwajung Hong</a><sup>1</sup>&ensp;
+            <a href="https://aliceoh9.github.io/" class="author-link">Alice Oh</a><sup>1</sup>&ensp;
+            <a href="https://juhokim.com/" class="author-link">Juho Kim</a><sup>1</sup>
+          </div>
+          <div class="is-size-6 has-text-grey" style="margin-bottom: 0.5rem;">
+            <sup>1</sup>KAIST &ensp;
+            <sup>2</sup>Seoul National University &ensp;
+            <sup>3</sup>University of Michigan &ensp;
+            <sup>4</sup>Gyeonggido Office of Education
+          </div>
+          <div class="is-size-7 has-text-grey" style="margin-bottom: 1.25rem;">
+            <sup>*</sup>Equal contribution
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>KAIST,</span>
-            <span class="author-block"><sup>2</sup>Seoul National University,</span>
-            <span class="author-block"><sup>3</sup>University of Michigan An Arbor,</span>
-            <span class="author-block"><sup>4</sup>Gyeonggido Office of Education</span>
+          <!-- Best Paper -->
+          <div style="margin-bottom: 0.75rem;">
+            <span style="display: inline-flex; align-items: center; gap: 0.4rem; background: #fff5f5; border: 1px solid #ffb3b3; border-radius: 20px; padding: 0.35rem 1rem; color: #cc0000; font-size: 0.95rem; font-weight: 600;">
+              <i class="fas fa-trophy"></i> Best Paper Award
+            </span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <!-- <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+              <span class="link-block">
+                <a href="https://dl.acm.org/doi/10.1145/3772318.3791517"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
-              </span> -->
+              </span>
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2512.05506"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                    <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
-              <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                <a href="https://github.com/JunhoMyung/WriteAid-Data"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                    <i class="fab fa-github"></i>
                   </span>
-                  <span>Data</span>
-                  </a>
+                  <span>Dataset</span>
+                </a>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -178,306 +206,420 @@
   </div>
 </section>
 
-<section class="hero teaser">
+
+<!-- Teaser -->
+<section style="background-color: #fafafa; padding: 2rem 1.5rem;">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <p class="is-size-6 has-text-weight-semibold has-text-grey" style="margin-bottom: 0.4rem; letter-spacing: 0.05em;">TL;DR</p>
+        <p class="is-size-5" style="line-height: 1.7;">
+          We deployed <strong>WriteAid</strong>, an LLM-based writing assistant, with 157 eighth-grade EFL students in South Korea over six weeks (14,863 query-response pairs).
+          LLM scaffolding improved in-class grammatical accuracy, but step-by-step guidance
+          <em>backfired</em> for lower-proficiency students — fostering dependency and demotivation —
+          while masking their struggles from teachers.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+    <div class="columns is-centered" style="margin-top: 2rem;">
+      <div class="column">
+        <figure style="text-align: center;">
+          <img src="./static/images/interaction.png" alt="Example interaction patterns across student performance groups"
+               style="max-width: 100%; height: auto; display: inline-block;">
+          <figcaption class="has-text-grey is-size-6" style="margin-top: 0.6rem;">
+            Example interaction patterns from high-, middle-, and low-performing students. Text originally in Korean is translated into English for clarity.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
 
 
+<!-- Stats -->
+<!-- <section class="section" style="padding-bottom: 0;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <div class="stat-box">
+          <span class="stat-number">157</span>
+          <span class="stat-label">8th-grade EFL students</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stat-box">
+          <span class="stat-number">14,863</span>
+          <span class="stat-label">Query-response pairs</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stat-box">
+          <span class="stat-number">3,733</span>
+          <span class="stat-label">Conversation threads</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="stat-box">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Weeks of deployment</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Abstract -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Large language models (LLMs) are promising tools for scaffolding students' English
+            writing skills, but their effectiveness in real-time K-12 classrooms remains
+            underexplored. Addressing this gap, our study examines the benefits and limitations
+            of using LLMs as real-time learning support, considering how classroom constraints,
+            such as diverse proficiency levels and limited time, affect their effectiveness.
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            We conducted a deployment study with 157 eighth-grade students in a South Korean
+            middle school English class over six weeks. Our findings reveal that while scaffolding
+            improved students' ability to compose grammatically correct sentences, this
+            step-by-step approach demotivated lower-proficiency students and increased their
+            system reliance. We also observed challenges to classroom dynamics, where extroverted
+            students often dominated the teacher's attention, and the system's assistance made it
+            difficult for teachers to identify struggling students.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Based on these findings, we discuss design guidelines for integrating LLMs into
+            real-time writing classes as inclusive educational tools.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
 
+<!-- System Design (brief) -->
+<section class="section" style="background-color: #f8f9fa; padding-top: 2.5rem; padding-bottom: 2.5rem;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">WriteAid</h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            WriteAid is an LLM-based writing support tool deployed as a <em>technology probe</em>
+            in real-world K-12 EFL classrooms. Students interact through a chat-based interface
+            with four tabs — <strong>Sample Essay</strong>, <strong>Write with AI</strong>,
+            <strong>Ask About Words/Grammar</strong>, and <strong>Check Grammar</strong> —
+            supporting Korean–English code-mixed input.
+            The LLM is prompted with six scaffolding strategies (Van de Pol et al., 2010) and
+            selects the most appropriate one to guide students step-by-step in Korean.
+          </p>
+        </div>
+        <!-- TODO: Add Figure 1 (interface screenshot) here -->
+        <figure class="image">
+          <img src="./static/images/system.png" alt="WriteAid interface">
+          <figcaption class="has-text-centered has-text-grey is-size-6" style="margin-top: 0.5rem;">
+            The WriteAid interface: (A) lesson objectives, (B) essay writing area, (C) AI chatbot tabs.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Key Findings -->
 <section class="section">
   <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Key Findings</h2>
 
-    <div class="columns is-centered">
+    <!-- RQ1 -->
+    <div style="margin-bottom: 3rem;">
+      <h3 class="title is-4">
+        <span class="rq-tag">RQ1</span>
+        How do students with varying proficiency levels engage with WriteAid?
+      </h3>
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+      <figure style="margin-bottom: 1.5rem; text-align: center;">
+        <img src="./static/images/distribution.png" alt="Question type distribution by proficiency level"
+             style="max-width: 80%; height: auto; display: inline-block;">
+        <figcaption class="has-text-grey is-size-6" style="margin-top: 0.6rem;">
+          Distribution of question types asked across high-, middle-, and low-performing student groups.
+        </figcaption>
+      </figure>
+
+      <div class="finding-card negative">
+        <p class="title is-6">Lower-proficiency students outsourced higher-order writing tasks</p>
+        <p class="is-size-6">
+          High-performing students delegated lower-order tasks — vocabulary translation (25.3%) and
+          validation seeking (15.7%) — to the LLM, freeing themselves to focus on higher-order
+          writing. In contrast, low-performing students used the LLM for full sentence generation
+          (8.2%) and partial sentence generation (14.9%), outsourcing the core skills of applying
+          grammatical rules and creating text.
+        </p>
       </div>
-      <!--/ Visual Effects. -->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <!--/ Re-rendering. -->
-
+      <div class="finding-card negative">
+        <p class="title is-6">Step-by-step scaffolding demotivated lower-proficiency students</p>
+        <p class="is-size-6">
+          High-performing students exhibited negative affective behaviors (annoyance, confusion)
+          only <strong>3.8 times per session</strong>, while middle- and low-performing students
+          showed <strong>12.2 and 11.4 times</strong>, respectively. Low-proficiency students
+          most frequently responded with "I don't know" even when the LLM was actively guiding
+          them — with 69.2% of negative affect emerging in the latter half of interactions,
+          suggesting accumulated frustration under time pressure.
+        </p>
       </div>
     </div>
-    <!--/ Animation. -->
 
+    <hr class="section-divider">
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
+    <!-- RQ2 -->
+    <div style="margin-bottom: 3rem;">
+      <h3 class="title is-4">
+        <span class="rq-tag">RQ2</span>
+        How do interaction patterns affect grammar and vocabulary retention?
+      </h3>
 
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
+      <div class="finding-card positive">
+        <p class="title is-6">LLM effectively improved grammatical accuracy during in-class activities</p>
+        <p class="is-size-6">
+          Of 632 sentences constructed with LLM assistance, <strong>82.3% were grammatically
+          correct</strong> — including 86.2% in the low-performing group. This suggests that
+          LLM-based scaffolding can serve as an effective tool for improving grammatical
+          accuracy regardless of proficiency level.
+        </p>
+      </div>
+
+      <div class="finding-card negative">
+        <p class="title is-6">LLM-assisted sentences were not retained by lower-proficiency students</p>
+        <p class="is-size-6">
+          When assessed independently 2–3 weeks later, high-performing students correctly
+          incorporated <strong>65.8%</strong> of LLM-assisted sentences into their final essays.
+          Middle- and low-performing students did so only <strong>37.8%</strong> and
+          <strong>14.0%</strong> of the time, respectively — suggesting that increased reliance
+          on the system did not translate into durable grammar or vocabulary learning.
+        </p>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
 
+    <hr class="section-divider">
+
+    <!-- RQ3 -->
+    <div>
+      <h3 class="title is-4">
+        <span class="rq-tag">RQ3</span>
+        How does real-time LLM integration affect classroom dynamics and equity?
+      </h3>
+
+      <div class="finding-card negative">
+        <p class="title is-6">The roles of the LLM and the teacher were not clearly defined</p>
+        <p class="is-size-6">
+          Students would often ask questions to the teacher first, even with simple questions
+          that the LLM could have easily handled. This pattern led the teacher to constantly
+          step in and redirect them by saying, <em>"Have you tried asking the model first?"</em>
+          The ambiguity of the LLM's role led to inefficiencies in both directions — students
+          were unsure when to use the LLM, and the teacher's attention was repeatedly drawn
+          to lower-order queries that the system was designed to handle.
+        </p>
+      </div>
+
+      <div class="finding-card positive">
+        <p class="title is-6">LLM provided scalable support and reduced the gap in task completion</p>
+        <p class="is-size-6">
+          The teacher could redirect students asking simple questions by saying
+          <em>"Try asking the LLM like this,"</em> enabling faster responses to repetitive
+          lower-level questions. The teacher noted having <em>"more time to walk around the
+          classroom and check students' progress."</em> The LLM also helped more students
+          complete tasks, reducing the gap between top and bottom performers.
+        </p>
+      </div>
+
+      <div class="finding-card negative">
+        <p class="title is-6">LLM became a more approachable alternative for introverted students — at a social cost</p>
+        <p class="is-size-6" style="margin-bottom: 0.75rem;">
+          Students who were already less inclined to speak up became even less likely to do
+          so when an approachable alternative was available. Rather than asking the teacher
+          or more proficient classmates, introverted students turned to the LLM — a channel
+          with lower anxiety and no social stakes.
+        </p>
+        <div style="border-left: 3px solid #cc9999; padding-left: 1rem; margin-bottom: 0.75rem; color: #666; font-style: italic;">
+          "Students who asked few questions before have been asking even fewer."
+          <span style="display: block; font-style: normal; font-size: 0.8rem; margin-top: 0.25rem;">— Classroom teacher</span>
+        </div>
+        <p class="is-size-6">
+          While increased accessibility to question-asking is a benefit, it also reduced
+          opportunities for collaborative learning. Peer learning is important in EFL
+          education: students with lower proficiency benefit from articulating what they
+          find difficult, while higher-proficiency students build confidence by helping peers.
+        </p>
+      </div>
+
+      <div class="finding-card positive">
+        <p class="title is-6">LLM introduced new dimensions of social interaction</p>
+        <p class="is-size-6">
+          Students occasionally discussed LLM responses with peers, compared outputs, and
+          shared excitement — <em>"It gave me a compliment!"</em> These episodes show that
+          integrating LLM in real-time classrooms can introduce a new dimension of social
+          interaction, suggesting opportunities for novel forms of peer engagement around
+          AI outputs.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
 
 
+<!-- Design Guidelines -->
+<section class="section" style="background-color: #f8f9fa;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Design Guidelines</h2>
+    <div class="columns is-multiline">
+      <div class="column is-half">
+        <div class="tab-card">
+          <p class="title is-6">
+            <span class="icon"><i class="fas fa-language"></i></span>
+            Syntax-Aware, Cross-Lingual Scaffolding
+          </p>
+          <p class="is-size-6">LLMs should recognize errors rooted in L1 syntax (e.g., subject omission in Korean) and guide students in restructuring ideas according to the target language, rather than simply translating.</p>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="tab-card">
+          <p class="title is-6">
+            <span class="icon"><i class="fas fa-sliders-h"></i></span>
+            Dynamic, Proficiency-Aware Scaffolding
+          </p>
+          <p class="is-size-6">Systems should adapt not only to proficiency but also to student motivation, ability to process feedback, and real-time time constraints. Withholding answers can be counterproductive for lower-proficiency students under time pressure.</p>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="tab-card">
+          <p class="title is-6">
+            <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+            Clearly Define LLM and Teacher Roles
+          </p>
+          <p class="is-size-6">Position the LLM as the first responder for lower-order queries (spelling, vocabulary, basic grammar), freeing the teacher for higher-order concerns like content development and personalized instruction.</p>
+        </div>
+      </div>
+      <div class="column is-half">
+        <div class="tab-card">
+          <p class="title is-6">
+            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+            Real-Time Teacher Dashboard
+          </p>
+          <p class="is-size-6">Provide teachers with real-time analytics on common student errors, engagement levels, and signs of over-reliance, ensuring all students' struggles remain visible and actionable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Dataset -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Open Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            We publicly release the fully anonymized student-LLM interaction dataset to
+            support future research. The dataset contains <strong>14,863 query-response pairs</strong>
+            across <strong>3,733 conversation threads</strong> from 133 eighth-grade EFL
+            students, collected over two semesters (Spring and Fall 2024).
+          </p>
+          <p>
+            The dataset includes queries in English, Korean, and code-mixed format,
+            covering all four WriteAid features: sentence construction, vocabulary/grammar
+            explanation, and grammar revision.
+          </p>
+        </div>
+        <a href="https://github.com/JunhoMyung/WriteAid-Data"
+           class="external-link button is-normal is-rounded is-dark">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>Access Dataset on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTeX -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+    <div style="position: relative;">
+      <pre id="bibtex-block"><code>@inproceedings{10.1145/3772318.3791517,
+  author = {Myung, Junho and Lim, Hyunseung and Oh, Hana and Jin, Hyoungwook and Kang, Nayeon and Ahn, So-Yeon and Hong, Hwajung and Oh, Alice and Kim, Juho},
+  title = {When Scaffolding Breaks: Investigating Student Interaction with LLM-Based Writing Support in Real-Time K-12 EFL Classrooms},
+  year = {2026},
+  isbn = {9798400722783},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3772318.3791517},
+  doi = {10.1145/3772318.3791517},
+  booktitle = {Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems},
+  articleno = {838},
+  numpages = {18},
+  keywords = {Large Language Models (LLMs), Scaffolding, K-12 Education, English as a Foreign Language (EFL), Human-AI Collaboration},
+  series = {CHI '26}
 }</code></pre>
+      <button id="copy-bibtex"
+              onclick="copyBibTeX()"
+              style="position: absolute; top: 0.6rem; right: 0.6rem; background: #fff; border: 1px solid #dbdbdb; border-radius: 4px; padding: 0.3rem 0.75rem; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; gap: 0.3rem; color: #363636;">
+        <i class="fas fa-copy"></i> Copy
+      </button>
+    </div>
   </div>
 </section>
+
+<script>
+  function copyBibTeX() {
+    const text = document.querySelector('#bibtex-block code').innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById('copy-bibtex');
+      btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+      btn.style.color = '#48c774';
+      btn.style.borderColor = '#48c774';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+        btn.style.color = '#363636';
+        btn.style.borderColor = '#dbdbdb';
+      }, 2000);
+    });
+  }
+</script>
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
+      <a class="icon-link" href="https://arxiv.org/abs/2512.05506">
+        <i class="ai ai-arxiv"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      &nbsp;
+      <a class="icon-link" href="https://github.com/JunhoMyung/WriteAid-Data">
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            The website template is based on
+            <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
           </p>
         </div>
       </div>
